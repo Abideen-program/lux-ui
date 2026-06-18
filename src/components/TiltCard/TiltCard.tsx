@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, MouseEvent } from 'react';
 import { CardProps } from '../Card/Card';
 import { sizeToDensity } from '../../types';

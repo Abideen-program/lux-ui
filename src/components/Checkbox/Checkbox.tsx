@@ -1,3 +1,5 @@
+'use client';
+
 import React, { InputHTMLAttributes, forwardRef } from 'react';
 import { LuxTone, LuxSize, BaseProps } from '../../types';
 

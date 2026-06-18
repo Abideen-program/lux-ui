@@ -1,3 +1,5 @@
+'use client';
+
 import React, { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { BaseProps } from '../../types';

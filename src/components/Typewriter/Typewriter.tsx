@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect, ElementType, HTMLAttributes } from 'react';
 import { BaseProps } from '../../types';
 

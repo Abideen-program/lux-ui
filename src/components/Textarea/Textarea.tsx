@@ -1,3 +1,5 @@
+'use client';
+
 import React, { TextareaHTMLAttributes, forwardRef } from 'react';
 import { LuxSize, BaseProps } from '../../types';
 

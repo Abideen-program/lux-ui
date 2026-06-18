@@ -1,3 +1,5 @@
+'use client';
+
 import React, { ReactNode, useState, cloneElement, isValidElement } from 'react';
 
 export type TooltipPlacement = 'top' | 'bottom' | 'left' | 'right';

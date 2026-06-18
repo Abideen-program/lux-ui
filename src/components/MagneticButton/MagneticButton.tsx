@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useRef, MouseEvent } from 'react';
 import { ButtonProps } from '../Button/Button.types';
 import { sizeToDensity, sizeToFontSize } from '../../types';

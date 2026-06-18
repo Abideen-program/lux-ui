@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useRef, useEffect, ReactNode, cloneElement, isValidElement } from 'react';
 import { createPortal } from 'react-dom';
 import { LuxRadius, BaseProps } from '../../types';

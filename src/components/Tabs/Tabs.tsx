@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, ReactNode, createContext, useContext } from 'react';
 import { LuxTone, LuxSize, BaseProps } from '../../types';
 
