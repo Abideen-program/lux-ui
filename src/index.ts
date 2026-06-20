@@ -194,3 +194,37 @@ export type { TimelineProps, TimelineItemData } from './components/Timeline';
 
 export { ColorPicker } from './components/ColorPicker';
 export type { ColorPickerProps } from './components/ColorPicker';
+
+// Phase 2 — Data & Advanced UI
+export { DatePicker } from './components/DatePicker';
+export type { DatePickerProps } from './components/DatePicker';
+
+export { TimePicker } from './components/TimePicker';
+export type { TimePickerProps } from './components/TimePicker';
+
+export { DataGrid } from './components/DataGrid';
+export type { DataGridProps, DataGridColumn, SortDirection } from './components/DataGrid';
+
+export { FileUpload } from './components/FileUpload';
+export type { FileUploadProps } from './components/FileUpload';
+
+export { TreeView } from './components/TreeView';
+export type { TreeViewProps, TreeNode } from './components/TreeView';
+
+export { VirtualList } from './components/VirtualList';
+export type { VirtualListProps } from './components/VirtualList';
+
+export { Kanban } from './components/Kanban';
+export type { KanbanProps, KanbanCard, KanbanColumnData } from './components/Kanban';
+
+export { BarChart, LineChart, AreaChart, PieChart, DonutChart } from './components/Charts';
+export type { ChartDataPoint, BarChartProps, LineChartProps, PieChartProps } from './components/Charts';
+
+export { CodeEditor } from './components/CodeEditor';
+export type { CodeEditorProps } from './components/CodeEditor';
+
+export { RichTextEditor } from './components/RichTextEditor';
+export type { RichTextEditorProps } from './components/RichTextEditor';
+
+export { InfiniteScroll } from './components/InfiniteScroll';
+export type { InfiniteScrollProps } from './components/InfiniteScroll';
