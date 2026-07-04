@@ -9,7 +9,9 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
-    "lint": "eslint src --ext .ts,.tsx"
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [
     "react", "component-library", "ui", "luxcss",
@@ -27,7 +29,13 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "typescript": "^5",
-    "tsup": "^8"
+    "tsup": "^8",
+    "vitest": "^2",
+    "@vitejs/plugin-react": "^4",
+    "@testing-library/react": "^16",
+    "@testing-library/jest-dom": "^6",
+    "@testing-library/user-event": "^14",
+    "jsdom": "^25"
   },
   "repository": {
     "type": "git",
