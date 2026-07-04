@@ -29,18 +29,21 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(({
   ...props
 }, ref) => {
   const sz = checkSizeMap[size];
+  const internalRef = React.useRef<HTMLInputElement>(null);
+
+  React.useImperativeHandle(ref, () => internalRef.current as HTMLInputElement);
 
   React.useEffect(() => {
-    if (ref && 'current' in ref && ref.current) {
-      ref.current.indeterminate = indeterminate || false;
+    if (internalRef.current) {
+      internalRef.current.indeterminate = indeterminate || false;
     }
-  }, [indeterminate, ref]);
+  }, [indeterminate]);
 
   return (
     <label style={{ display: 'inline-flex', alignItems: 'flex-start', gap: '0.5rem', cursor: disabled ? 'not-allowed' : 'pointer', opacity: disabled ? 0.5 : 1, userSelect: 'none' }}>
       <div style={{ position: 'relative', flexShrink: 0, marginTop: '0.1rem' }}>
         <input
-          ref={ref}
+          ref={internalRef}
           type="checkbox"
           checked={checked}
           disabled={disabled}
